@@ -1,1 +1,1 @@
-Srurrr - {A Music Player}
+Srurrr - A Music Player
