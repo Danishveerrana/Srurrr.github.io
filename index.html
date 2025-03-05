@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Srurrr Music Player</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+  <!-- Intro Animation Section -->
+  <div id="intro">
+    <div class="intro-heading">Srurrr</div>
+    <div class="intro-subheading">By danishveerrana</div>
+    <div class="loading-bar"></div>
+  </div>
+
+  <!-- Music Player UI -->
+  <div class="player-container">
+    <div class="player">
+      <div class="player-heading">Srurrr</div>
+      <div class="song-title">No song selected</div>
+      
+      <!-- Controls -->
+      <div class="controls">
+        <button class="icon-btn">&#10094;</button> <!-- Previous -->
+        <button class="play-btn">&#10074;&#10074;</button> <!-- Play/Pause -->
+        <button class="icon-btn">&#10095;</button> <!-- Next -->
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="progress-container">
+        <span class="text-silver">00:00</span>
+        <input type="range" class="progress-bar" value="0">
+        <span class="text-silver">03:00</span>
+      </div>
+
+      <!-- Choose File Button -->
+      <label for="file-input" class="file-btn">Choose song</label>
+      <input type="file" id="file-input" accept="audio/*">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
